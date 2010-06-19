@@ -10,8 +10,8 @@ import java.util.regex.Pattern;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-import jay.box.taobao.crawl.common.HtmlDOM;
-import jay.box.taobao.crawl.common.WebRobot;
+import jay.box.crawl.util.HtmlDOM;
+import jay.box.crawl.util.WebRobot;
 import jay.box.taobao.crawl.hibernate.TaobaoItem;
 
 /**

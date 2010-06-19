@@ -1,4 +1,4 @@
-package jay.box.taobao.crawl.common;
+package jay.box.crawl.util;
 
 import java.io.IOException;
 import java.io.StringReader;

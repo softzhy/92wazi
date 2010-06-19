@@ -1,4 +1,4 @@
-package jay.box.taobao.crawl.common;
+package jay.box.crawl.util;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.cookie.CookiePolicy;
