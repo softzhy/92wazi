@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import jay.box.taobao.crawl.common.HtmlDOM;
-import jay.box.taobao.crawl.common.WebRobot;
+import jay.box.crawl.util.HtmlDOM;
+import jay.box.crawl.util.WebRobot;
 
 import org.dom4j.Document;
 import org.dom4j.Node;
