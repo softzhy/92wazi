@@ -1,0 +1,1519 @@
+/*-----------------------------------------------------------------------------
+Primary Headscape Style Sheet
+
+version:   4.0
+author:    Paul Boag
+email:     paul.boag@headscape.co.uk
+website:   http://www.headscape.co.uk
+-----------------------------------------------------------------------------*/
+
+@import url("../facebox/facebox.css");
+
+/* =Reset Styles - Thank you Eric Meyer (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+body {
+	color: black;
+	font: 62.5% "微软雅黑","宋体",Helvetica, sans-serif,Arial;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* =General  */
+
+body {
+	background:#311e10 url(/headscape/background.jpg);
+	padding:2em 0;
+}
+
+#container {
+	background-color:white;
+	-moz-border-radius-topleft:20px; 
+	-webkit-border-top-left-radius:20px;
+	width:92em;
+	margin:0 auto 0 auto;
+	padding:2em 3em 0 3em;
+	position:relative;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+	-webkit-box-shadow : 0 0 10px #000;
+}
+
+.csImage, .csDesc, #services, #feature, #about {
+	top:2.5em;
+}
+
+#services, #boagworld, #feature {
+color:#6d6d6d;
+}
+
+#news a, #info a, #content p a, #facebox p a, #facebox li a, #transcript a, .clientList #content a, .news dl a, .explanation a {
+	color: #6f7e35;
+	padding:1px;
+}
+
+#news a:visited, #info a:visited, #breadcrumbs li a:visited, #content p a:visited, #facebox p a:visited, #facebox li a:visited, #transcript a:visited, .clientList #content a:visited, .news dl a:visited, .explanation a:visited {
+	color:#bd7945;
+}
+
+#news a:hover, #info a:hover, #content p a:hover, #facebox p a:hover, #facebox li a:hover, #transcript a:hover, .clientList #content a:hover, .news dl a:hover, .explanation a:hover {
+	background:#d6e59b;
+	text-decoration:none;
+	color:#000;
+}
+
+#sReader {
+	position: absolute;
+	top:-1000em;
+	left:-100000em;
+}
+
+#logo, .fdpoweredby { display:none; }
+
+/* =Header */
+
+.home h1, h1 a {
+	width:380px;
+	display:block;
+	height:11em;
+	overflow:hidden;
+	text-indent:-5000em;
+	background:url(/images/logo.gif) no-repeat;
+}
+
+h2 {
+	position:absolute;
+	left:-5000em;
+}
+
+#qContact {
+	position:absolute;
+	padding-top:2em;
+	top:0;
+	right:3em;
+	background:url(../images/watermark.gif) no-repeat left top;
+	width:50%;
+	height:14em;
+}
+
+#qContact li {
+	font-size:1.2em;
+	text-align:right;
+	line-height:2.4em;
+}
+
+#qContact li a {
+	display:block;
+	padding-right:50px;
+	color:#9b9c9b;
+}
+
+#qContact #callme a {
+	color:#000000;
+	background: url(../images/callme.gif) no-repeat right center;
+}
+
+#qContact #enquiries a {
+	background: url(../images/enquiries.gif) no-repeat right center;
+}
+
+#qContact #download a {
+	background: url(../images/download.gif) no-repeat right center;
+}
+
+/* =Case Studies */
+
+#csMenu {
+	margin:0 -1.5em;
+	height:8em;
+	position:relative;
+	z-index:98;
+}
+
+#m2 { left:11.42857em; margin-left:-1px; }
+
+#m3 { left:22.85714em; margin-left:-2px; }
+
+#m4 { left:34.28571em; margin-left:-3px; }
+
+#m5 { left:45.71429em; margin-left:-4px; }
+
+#m6 { left:57.14286em; margin-left:-5px; }
+ 
+
+
+#csMenu li {
+	height:5em;
+	font-size:1.4em;
+	position:absolute;
+	bottom:0;
+	background:url(/headscape/dots.gif) no-repeat right center;
+}
+
+#csMenu li a, .mTitle {
+	height:5em;
+	text-decoration:none;
+	width:11.45em;
+	color:#000000;	
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.mTitle {
+	padding:0 10px 0 67px;
+}
+
+#csMenu .current {
+	margin-bottom:-1px;
+}
+
+#csMenu li a:hover, #csMenu .current {
+	border-bottom:1px solid #e9f4cc;
+	border-top:0;
+	background:url(menuFade.gif) no-repeat left bottom;
+}
+
+#csMenu li a:hover .mTitle, #csMenu .current .mTitle {
+	background:url(menuFade2.gif) no-repeat right bottom;
+}
+
+#csMenu img {
+	position:absolute;
+	bottom:1em;
+	left:10px;
+	
+}
+
+#caseStudies {
+	clear:both;
+	background:#f7faec url(../images/caseStudyBack.gif) repeat-x bottom;
+	margin:0 -3em;
+	position:relative;
+	height:34.8em;
+	border-top:1px solid #c5e480;
+	border-bottom:1px solid #c5e480;
+}
+
+.csImage  {
+	position:absolute;
+	margin-top:3px;
+	right:3em;
+	width:45em;
+	overflow:hidden;
+	text-align:right;
+}
+
+.csImage a {
+	display:block;
+	width:440px;
+	height:266px;
+	padding:6px 5px;
+	background:url(../images/screenBack.png);
+	float:right;
+}
+
+.csImage img {
+	border:1px solid #6d6e6b;
+}
+
+.csDesc {
+	position:absolute;
+	left:3em;
+	height:32.3em;
+	padding-right:7em;
+	width:44.2em;
+	background:url(../images/csWatermark.gif) no-repeat right bottom;
+}
+
+#more {
+	position:absolute;
+	right:3em;
+	bottom:3em;
+	height:1.2em;
+}
+
+#more a {
+	color:#858b78;
+}
+
+#more a:hover {
+	color:#000;
+}
+
+#caseStudies .explanation {
+	font-size:1.4em;
+	line-height: 1.714286em;
+}
+
+#caseStudies dd {
+	position:absolute;
+	top:-5000em;
+}
+
+#caseStudies dl {
+	float:left;
+	width:100%;
+}
+
+
+#caseStudies dt {
+	float:left;
+	padding:0.5em;
+	border:1px solid #aec971;
+	background: #dbeeb1;
+	margin:0.2em;
+	margin-left:0;
+	position:relative;
+	white-space: nowrap;
+}
+
+
+
+.csDesc h4 {
+	margin:1em 0 0.5em 0;
+	font-size:1.2em;
+}
+
+.csDesc cite {
+	line-height:2.4em;
+	color:#be632a;
+	font-style:normal;
+}
+
+.csDesc cite strong {
+	font-weight:bold;
+}
+
+#caseStudies h3 {
+	height: 50px;
+	overflow:hidden;
+	text-indent:-5000em;
+}
+
+.nats h3 { background:url(../images/titles/caseStudies/nats.gif) no-repeat; }
+.wff h3 { background:url(../images/titles/caseStudies/wff.gif) no-repeat; }
+.peters h3 { background:url(../images/titles/caseStudies/peters.gif) no-repeat; }
+.wwt h3 { background:url(../images/titles/caseStudies/wwt.gif) no-repeat; }
+.thames h3 { background:url(../images/titles/caseStudies/thames.gif) no-repeat; }
+.lancaster h3 { background:url(../images/titles/caseStudies/lancaster.gif) no-repeat; }
+.butterfly h3 { background:url(../images/titles/caseStudies/butterfly.gif) no-repeat; }
+.apetito h3 { background:url(../images/titles/caseStudies/apetito.gif) no-repeat; }
+.intervet h3 { background:url(../images/titles/caseStudies/intervet.gif) no-repeat; }
+
+
+#zoom {
+	width:460px;
+	position:absolute;
+	height:39px;
+	top:264px;
+	margin-top:1em;
+	right:3em;
+	overflow:hidden;
+}
+
+#zoom a {
+	position:absolute;
+	left:0;
+	display:block;
+	height:39px;
+	top:0;
+	width:39px;
+	background:url(../images/zoom.png) no-repeat left top;
+	text-indent:-5000em;
+	overflow:hidden;
+}
+
+/* =Info */
+
+#info {
+	position:relative;
+	height:38em;
+}
+
+#services {
+	position:absolute;
+	left:30em;
+	width:28em;
+	padding:0 2em;
+	border-right: 1px solid #ece9e6;
+	border-left: 1px solid #ece9e6;	
+}	
+
+#services h3 {
+	background:url(../images/titles/services.gif) no-repeat 0 5px;
+	height: 55px;
+	overflow:hidden;
+	text-indent:-5000em;
+}
+
+#services dd, #feature p {
+	font-size:1.2em;
+	line-height: 2em;
+	margin-bottom:1.4em;
+}
+
+#services dt a {
+	font-size:1.4em;
+	line-height: 1.714286em;
+	color:#bd7945;
+	height:5em;
+	display: block;
+}
+
+#services dt a:hover {
+	background: none;
+}
+
+#sDesign {
+	background:url(/images/design.jpg) no-repeat 0 0.4em;
+}
+
+#sTech {
+	background:url(/images/tech.jpg) no-repeat 0 0.4em;
+}
+
+#sConsult {
+	background:url(/images/consult.jpg) no-repeat 0 0.4em;
+}
+
+#services dd, #services dt {
+	padding-left:72px;
+}
+
+#services dd {
+	margin-top:-3.9em;
+	border-bottom:1px dotted #d3d3d3;
+	padding-bottom:1em;
+	margin-bottom:0.95em;
+}
+
+#services dd:last-child {
+	border-bottom:none;
+}
+
+#feature {
+	position:absolute;
+	right:0;
+	width:28em;
+}
+
+#feature h3 {
+	background:url(../images/titles/clinic.gif) no-repeat 0 5px;
+	height: 55px;
+	overflow:hidden;
+	text-indent:-5000em;
+}
+
+#feature a:hover {
+	background:none;
+}
+
+#about { 
+	position:absolute;
+	left:0;
+	width:28.2em;	 /*Had to slightly fudge the width and position to accommodate the title which is too long.*/
+}
+
+#about h3 {
+	background:url(../images/titles/about.gif) no-repeat;
+	height: 55px;
+	overflow:hidden;
+	text-indent:-5000em;
+	width:29em;
+}
+
+#about p {
+	font-size:1.4em;
+	line-height: 1.714286em;
+	margin-bottom:1.75em;
+}
+
+
+
+
+/* =news */
+
+#news {
+	position:relative;
+	height:43em;
+	background:#f5f5f5 url(../images/whiteDot.gif) repeat-y 50%;
+	margin:0 -3em;
+}
+#boagworld {
+	position:absolute;
+	right:3em;
+	padding-top:2.5em;
+	width:44em;	
+	border-top:solid 1px #d3d3d3;
+}
+
+#boagworld h3 {
+	background:url(../images/titles/boagworld.gif) no-repeat 0 5px;
+	height: 55px;
+	overflow:hidden;
+	text-indent:-5000em;
+}
+
+#hNews {
+	position:absolute;
+	left:3em;
+	width:44em;
+	border-top:solid 1px #d3d3d3;
+	padding-top:2.5em;	
+}
+
+#hNews h3 {
+	background:url(../images/titles/hsNews.gif) no-repeat;
+	height: 55px;
+	overflow:hidden;
+	text-indent:-5000em;
+}
+
+#boagworld .stories li {
+	font-size:1.2em;
+	line-height: 2em;
+}
+
+#boagworld p, #hNews .stories li {
+	font-size:1.4em;
+	line-height: 1.714286em;
+}
+
+#hNews .stories li {
+	padding:0 0 0.857143em 22px;
+	margin-bottom: 0.857143em;
+	background:url(../images/bullet.gif) no-repeat 0 0.4em;
+	border-bottom:1px dotted #d3d3d3;
+}
+
+#boagworld .stories li {
+	padding:1em 0 1em 22px;
+	margin-bottom:-1px;
+	background:url(../images/bullet.gif) no-repeat 0 1.5em;
+	border-top:1px dotted #d3d3d3;
+	border-bottom:1px dotted #d3d3d3;
+}
+
+#boagworld p {
+	margin-bottom: 0.9em;
+}
+
+#news .rss, #news .email {
+	float:left;
+}
+
+#news .rss a, #news .email a {
+	display:block;
+	color:#b4b5b4;
+	padding-left:23px;
+	line-height:2em;
+	margin-right:1em;
+}
+
+#news .rss a {
+	background:url(../images/rss.gif) no-repeat left center;
+	padding-left:20px;
+}
+
+#news .email a {
+	background:url(../images/mail.gif) no-repeat left center;
+}
+
+#news .rss a:hover, #news .email a:hover {
+	text-decoration:underline;
+	color:#000000;
+}
+
+#boagworld .rss a, #boagworld .email a {
+	margin-top:1.5em;
+}
+
+/* =contact */
+
+#contact {
+	position:relative;
+	padding-top:110px;
+	height:41em;
+	background:#e59d59 url(../images/contactBack.gif) repeat-x;
+	margin:0 -3em;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+}
+
+#contact p {
+	color:#FFFFFF;
+}
+
+#contact p label {
+	color:#000000;
+}
+
+#id2342994 label em {
+	color:#FFFFFF;
+}
+
+#contact form h3 {
+	background:url(../images/titles/contact.gif) no-repeat;
+	height: 55px;
+	overflow:hidden;
+	text-indent:-5000em;
+}
+
+#contact form {
+	position:absolute;
+	left:3em;
+	top:110px;
+	width:60em;	
+	height:37.3em;
+}	
+
+#url {
+	position: absolute;
+	top:-5000em;
+	left:-5000em;
+}
+
+#contact form #comment {
+	position:absolute;
+	right:0;
+	top:5.7em;
+	margin-top:55px;
+}
+
+#contact form button {
+	position:absolute;
+	width:138px;
+	right:0;
+	bottom:0;
+	margin-top:55px;
+	padding:0;
+	border:none;
+	background:#e59d59;
+	cursor:pointer;
+}
+
+#contactList {
+	position:absolute;
+	top:165px;
+	right:0;
+	padding-left:2em;
+	width:31em;	
+	border-left:1px dotted #bd7945;
+}
+
+label {
+	display:block;
+	line-height:1.6;
+	margin-top:0.5em;
+}
+
+.inst {
+	font-size:1.4em;
+	line-height: 1.714286em;
+	margin-bottom:1em;
+}
+
+#contactList dl, #contact form label {
+	font-size:1.2em;
+}
+
+#contactList dl {
+	margin-top:1.5em;
+}
+
+#contactList dt {
+	color:#7d502e;
+	height:2.7em;
+	padding-left:35px;
+	line-height:1.1em;
+}
+
+#marcus { background:url(../images/People/marcusTh.jpg) no-repeat left top; }
+#paul { background:url(../images/People/paulTh.jpg) no-repeat left top; }
+#chris { background:url(../images/People/chrisTh.jpg) no-repeat left top; }
+#charlie { background:url(../images/People/charlieTh.jpg) no-repeat left top; }
+#pete { background:url(../images/People/peteTh.jpg) no-repeat left top; }
+#rob { background:url(../images/People/robTh.jpg) no-repeat left top; }
+
+#contactList a {
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+
+#contactList a:hover {
+	text-decoration:underline;
+}
+
+#contactList dd {
+	margin-bottom:1.43em;
+	padding-left:35px;
+	margin-top:-1.1em;
+	color:#383838;
+}
+
+textarea, input {
+	font: 1.2em/1.4 Tahoma, Helvetica, Arial, sans-serif;
+	padding:0.3em 0.2em;	
+	width:23em;
+	border:none;
+}
+
+textarea {
+	height:14.2em;
+}
+
+/*
+#spare {
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:17px;
+	height:14px;
+	background:url(../images/corner2.gif);
+	text-indent:-5000em;
+}
+*/
+
+/* =footer */
+
+#footer {
+	width:92em;
+	margin:1em auto 0 auto;
+	padding-bottom:2em;
+	text-align:center;
+	line-height:1.4;
+	color:#e59d59;
+}
+
+#footer .vcard {
+	font-size: 1.2em;
+}
+
+.registered {
+	cursor: pointer;
+	border-bottom: 1px dotted #e59d59;
+}
+
+/* =Screenshots and features */
+
+.big #container, .big #footer { width:834px }
+
+.wff #container, .wff #footer { width:788px }
+
+.video #container, .video #footer, .thanks #container, .thanks #footer, .error #container, .error #footer, .news #container, .news #footer { width:526px; }
+
+.big #qContact { background:none; }
+
+.big #content img, .video #content .vid {
+	border:10px solid #555555;
+}
+
+#content p, #facebox p, #content p, .news dl {
+	margin:1em 0;
+	font-size:1.2em;
+	color:#555;
+}
+
+#transcript p, .thanks #content, .error #content, .news #content {
+	margin:1em 0;
+	font-size:1.2em;
+	line-height:1.8em;
+}
+
+/* =Breadcrumbs */
+
+
+#breadcrumbs li {
+	float:left;
+	font-size:1.2em;
+	padding:1em 20px 1em 0;
+	background:url(../images/breadcrumb.gif) no-repeat center right;
+	margin-right: 10px;
+	color:#6d6d6d;
+}
+
+#breadcrumbs li a {
+	color:#a8c43f;
+	position:relative;
+	top:-2px;
+}
+
+/* =Notice, thanks and error */
+
+#notice {
+	padding:1em 0 3em 0;
+	color:#6d6d6d;
+	background:url(../images/corner3.gif) no-repeat bottom right;
+	margin-right:-3em;
+}
+
+#notice a { color:#a8c43f; }
+
+.thanks h3 {
+	height:30px;
+	overflow:hidden;
+	text-indent:-5000em;
+	background:url(../images/titles/thanks.gif) no-repeat;
+}
+
+.error h3 {
+	height:30px;
+	overflow:hidden;
+	text-indent:-5000em;
+	background:url(../images/titles/404.gif) no-repeat;
+}
+
+.error strong {
+	font-weight:bold;
+}
+
+/* =CV */
+
+.cv #container, .cv #footer, #facebox .cv {width:66em}
+
+.cv #content {
+	float:left;
+	margin:1em 0;
+	padding:2em 0;
+	border-top:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+}
+
+.cv #qContact {background:none;}
+
+.cv #notice { clear:both }
+
+.cv #pic { 
+float:right;
+display:block;
+margin:1em 1em 2em 4em;
+border:10px solid #555555;
+}
+
+.cv #content h3, #facebox .cv h3 {
+	text-indent:-5000em;
+	height:40px;
+}
+
+#boag {background:url(../images/titles/people/boag.gif) no-repeat top left;}
+#lillington {background:url(../images/titles/people/lillington.gif) no-repeat top left;}
+#allen {background:url(../images/titles/people/allen.gif) no-repeat top left;}
+#scott {background:url(../images/titles/people/scott.gif) no-repeat top left;}
+#boston {background:url(../images/titles/people/boston.gif) no-repeat top left;}
+#borley {background:url(../images/titles/people/borley.gif) no-repeat top left;}
+
+.cv #content .title, #facebox .cv .title {
+	margin-top:0;
+	font-size: 1.5em;
+	color:#bd7945;
+}
+
+.cv #content #bio, #facebox .cv #bio {
+	line-height:2;
+	padding-right:220px;
+	margin-right:4em;
+}
+
+.cv #content li, #facebox .cv li  {
+	font-size:1.2em;
+	text-align:left;
+	line-height:2.4em;
+	border:none;
+}
+
+.cv #content li span, #facebox .cv li span {
+	display:block;
+	padding-left:50px;
+	color:#000000;
+	text-decoration:none;
+}
+
+ .cv #content .tel, #facebox .cv .tel {
+	background: url(../images/callme.gif) no-repeat left center;
+}
+
+.cv #content .email, #facebox .cv .email {
+	background: url(../images/enquiries.gif) no-repeat left center;
+}
+
+#facebox .cv, .cv #content  {
+	background:url(../images/watermark.gif) right top no-repeat;
+}
+
+#facebox .cv {
+	margin-top:-10px;
+	padding-top:10px;
+}
+
+#facebox .footer { clear:both; }
+
+
+/* =Client List */
+
+.clientList #container { overflow:hidden }
+
+.clientList #content {
+	clear:both;
+	width:98em;
+	position:relative;
+	left:-3em;
+	background:#f5f5f5;
+	float:left;
+	padding:1em 0;
+	margin:1em 0;
+	border-bottom:1px solid #d3d3d3;
+	border-top:1px solid #d3d3d3;
+}
+
+.clientList #content ul, #facebox #clientList ul, #facebox #allClients ul {
+	margin:1em 0;
+	font-size:1.2em;
+	line-height:1.8;
+}
+
+.clientList #content div {
+	float:left;
+	width:25.4em;
+	padding:0 3em;
+}
+
+.clientList #notice {
+	clear:both;
+}
+
+.clientList #content li, #facebox #clientList li, #facebox #allClients li {
+	padding:0 0 0.857143em 22px;
+	margin-bottom: 0.857143em;
+	background:url(../images/bullet.gif) no-repeat 0 0.4em;
+	border-bottom:1px dotted #d3d3d3;
+	}
+
+.clientList #content  h3, #facebox #clientList h3, #facebox #allClients h3 {
+	height: 4.15em;
+	overflow:hidden;
+	text-indent:-5000em;
+	margin-top:2em;
+}
+
+#facebox h3 {
+	margin-top:1em;
+}
+
+#privT { background:url(../images/titles/commercial.gif) no-repeat; }
+
+#eduT { background:url(../images/titles/education.gif) no-repeat; }
+
+#pubT { background:url(../images/titles/public.gif) no-repeat; }
+
+#hertT { background:url(../images/titles/heritage.gif) no-repeat; }
+
+#charT { background:url(../images/titles/charities.gif) no-repeat; }
+
+#facebox #clientList, #facebox #allClients {
+	background:#f5f5f5;
+	padding:1em;
+	display:block;
+}
+
+#facebox #allClients {
+	height:31em;
+	overflow-y:auto;
+}
+
+/* =Individual pages */
+
+.news #content {
+	clear:both;
+}
+
+.news #content h3 {
+	font-weight:bold;
+	font-size: 2.5em;
+	text-transform:lowercase;
+	margin:1.5em 0 0.7em 0;
+	color:#000000;
+	letter-spacing:-1px;
+}
+
+.news #content h4 {
+	font-weight:bold;
+	font-size: 1.7em;
+	text-transform:lowercase;
+	margin:1em 0 0.5em 0;
+	color:#333333;
+}
+
+.news dt {
+	font-weight:bold;
+	margin-top:1em;
+}
+
+blockquote {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:oblique;
+	color:#5c5c5c;
+	margin-left:62px;
+}
+
+#caseStudies blockquote {
+	margin-left:0;
+}
+
+/* =Services */
+
+.services #container, .services #footer {
+	width: 570px;
+}
+
+.services #content p, #facebox .services p, .services #content li, #facebox .services li {
+	font-size: 14px;
+	color: black;
+	line-height: 24px;
+}
+
+.services #content li, #facebox .services li {
+	list-style: circle;
+	list-style-position: outside;
+	margin-left:40px
+}
+
+.services h3 {
+	clear:both;
+}
+
+.services #content p.callToAction {
+	color: #4d4d4d;
+	font-weight: bold;
+}
+
+.img {
+	background-color: #d3d3d3;
+	border:1px solid #c6c6c6;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+	
+}
+
+#content .img p, #facebox .img p {
+	margin:0;
+	padding:10px;
+	font-size: 12px;
+	color: #4d4d4d;
+}
+
+.img img {
+	margin:9px 9px 0 9px;
+	border:1px solid #c6c6c6;
+	display: block;
+	-webkit-box-shadow : 0 0 5px #888;
+}
+
+.serTitle { 
+width:400px;
+height:31px;
+text-indent: -5000em;
+overflow: hidden;
+padding-top:30px; 
+ }
+ 
+#facebox .serTitle { padding:0;}
+
+#UI {background:url(/images/titles/services/userInterface.gif) no-repeat left bottom;}
+
+#app {background:url(/images/titles/services/applicationDevelopment.gif) no-repeat left bottom;}
+
+#consult {background:url(/images/titles/services/consultancy.gif) no-repeat left bottom;}
+
+/* =Javascript related styling */
+
+.jsenabled #caseStudies dt {
+	cursor:pointer;
+	border:none;
+	background:url(../images/tagTL.gif) top left;
+	padding:0;
+}
+
+.jsenabled #caseStudies dt .TR {
+	background:url(../images/tagTR.gif) top right no-repeat;
+	display:block;
+}
+
+.jsenabled #caseStudies dt .BL {
+	background:url(../images/tagBL.gif) bottom left no-repeat;
+	display:block;
+}
+
+.jsenabled #caseStudies dt .BR {
+	background:url(../images/tagBR.gif) bottom right no-repeat;
+	display:block;
+	padding:5px 10px;
+}
+
+#caseStudies dt span {
+	display:block;
+}
+#caseStudies dt div {
+	position: absolute;
+	float:none;
+	left:0;
+	bottom:1em;
+	opacity: 0;
+	width:20em;
+	font-size:1.2em;
+	white-space:normal;
+	z-index:100;
+	line-height:1.6;
+	color:#575757;
+}
+
+#caseStudies .csDesc p { margin-top:1em }
+
+.explanation  { margin-top:-1em }
+
+#caseStudies .csDesc h4 { font-weight:bold; }
+
+.messageTR {
+	background:url(../images/popTR.png) top right no-repeat;
+	padding-right:24px;
+}
+
+.messageTL {
+	background:url(../images/popTL.png) top left no-repeat;
+	padding:24px 0 0 24px;
+}
+
+.messageBR {
+	background:url(../images/popBR.png) top right no-repeat;
+	padding-right:24px;
+	height:24px;
+}
+
+.messageBL {
+	background:url(../images/popBL.png) top left no-repeat;
+	height:24px;
+	text-align:center;
+	position:relative;
+}
+
+.messageBL img {
+	position:absolute;
+	top:15px;
+	left:50%;
+	right:50%;
+	width:27px;
+	height:13px;
+}
+
+.messageBL .arrowPos {
+	left:2em;
+	right:auto;
+	float:left;
+	}
+
+.jsenabled #id2342994 span { display:block; float:left;  }
+
+.jsenabled #id2342994 .TL {
+	background:white url(../images/inputTL.gif) left top no-repeat;
+}
+
+.jsenabled #id2342994 .TR {
+	background:url(../images/inputTR.gif) right top no-repeat;
+}
+
+.jsenabled #id2342994 .BL {
+	background:url(../images/inputBL.gif) left bottom no-repeat;
+}
+
+.jsenabled #id2342994 .BR {
+	background: url(../images/inputBR.gif) right bottom no-repeat;
+}
+
+.jsenabled #id2342994 input, .jsenabled #id2342994 textarea {
+	margin:4px;
+}
+
+.jsenabled #id2342994 p {
+	clear:both;
+}
+
+/* =Sub Sites */
+
+.ss #container {
+	background-image: none;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-topleft:20px; 
+	-webkit-border-top-left-radius:20px;
+	-webkit-box-shadow : 0 0 5px #000;
+}
+
+.ss #secondary h3 {
+	border-top:none;
+	margin-top:0;
+	clear: both;
+}
+
+.ss #content {
+	position: relative;
+	line-height: 1.8;
+}
+
+.ss #primary {
+	margin-right:22em;
+}
+
+.ss #secondary {
+	position: absolute;
+	top:0;
+	right:0;
+	width:20em;
+}
+
+.ss h3 {
+	font-weight: bold;
+	font-size: 2em;
+	text-shadow : #d3d3d3 1px 1px 1px;
+	letter-spacing: -1px;
+}
+
+.ss #booking {
+	padding:2em;
+	background-color: #fffecc;
+	border: 1px solid #faebb1;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+	margin-bottom: 2em;
+	margin-top:15px;
+}
+
+.ss #booking p { color: #bd7945; }
+
+.ss #booking strong { font-weight: bold;}
+
+.ss #content .bookNow a, .ss #content .bookNow a:hover {
+	width:100%;
+	display: block;
+	height:52px;
+	background: url(/images/bookNow.gif) no-repeat top center;
+	text-indent: -5000em;
+	overflow: none;
+	border: none;
+}
+
+.bookNow {
+	display: block;
+}
+
+.ss #booking h3 {
+	font-size:2.5em;
+	line-height: 1.4em;
+}
+
+#price {
+	text-shadow : #d3d3d3 1px 1px 1px;
+	line-height: 1;
+}
+
+#booking acronym {
+	font-size: 0.25em;
+	font-weight: normal;
+	color: #bd7945;
+	border-bottom: 1px dotted #dad9af;
+	cursor: pointer;
+}
+
+.ss #primary, .ss form {
+	font-size: 1.2em;
+}
+
+.ss #primary p, .ss #primary ul {
+	color: #232323;
+}
+
+.ss #primary ul {
+	font-size: 1.2em;
+	padding-bottom:1em;
+	float: left;
+}
+
+.ss #primary li {
+	margin:0.5em 0;
+	padding:0 10px;
+	border: 1px solid #e3e5de;
+	border-left: 10px solid #e3e5de;
+	background-color: #eaede6;
+	float:left;
+}
+
+.ss h3 {
+	clear:none;
+}
+
+.ss #primary p.summary, .ss #content blockquote {
+	text-shadow : #d3d3d3 1px 1px 1px;
+	letter-spacing: -1px;
+	font-size: 1.9em;
+}
+
+.ss #content blockquote p {
+	font-style: normal;
+	margin:3em 0;
+	color: black;
+	font-size: 1em;
+}
+
+.ss #content cite {
+	font: 0.7em/1.8 Helvetica, Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+.ss #content a {
+	text-decoration: none;
+	background-color: #fffecc;
+	border-bottom: 1px solid #faebb1;
+}
+.ss #content a:hover {
+	border-bottom: 1px solid #a3b268;
+}
+
+#s1 {
+	float:left;
+	padding-top:1em;
+	padding-bottom: 2em;
+}
+
+#s2, #s3 {
+	float:right;
+}
+
+.content #s3 {
+	margin-top:-30px;
+	margin-bottom:10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.clinic h1 a, .clinicThanks h1 a {
+	width:573px;
+	height:74px;
+	overflow: none;
+	text-indent: -5000em;
+	background: url(/images/clinic.gif) no-repeat bottom left;
+	clear: both;	
+	padding:0;
+	display: block;
+}
+
+.content h1 a {
+	background: url(/clinic/content/content.gif) no-repeat bottom left;
+}
+
+#webDesigners {
+	border:1px solid #ccc;
+	padding:1em;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+	-webkit-box-shadow : 0 0 5px #ccc;
+	margin:0;
+	
+}
+
+.ss form {
+	background: #e59d59 url(http://boagworld.com/websiteownersmanual/images/watermark.png) bottom center no-repeat;
+	margin:0 -2.5em;
+	padding:1em 2.5em 4em 2.5em;
+	-moz-border-radius-bottomright:20px; 
+	-webkit-border-bottom-right-radius:20px;
+	border-top:10px solid #ffae63;
+}
+
+#buyHighlight {
+	margin:-1em -2.5em -4em -2.5em;
+	padding:1em 2.5em 4em 2.5em;
+}
+
+
+#formFields {
+	position: relative;
+}
+
+.ss form label, .ss form p {
+	font-size: 1.2em;
+	margin:1em 0;
+}
+
+.ss form input, .ss form textarea {
+	-moz-border-radius-bottomright:10px; 
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-topleft:10px; 
+	-webkit-border-top-left-radius:10px;
+	padding:5px;	
+	color: gray;
+	border:none;
+}
+
+.ss form textarea {
+	margin-top:5px;
+}
+
+.ss form textarea {
+	height:7em;
+	width: 30em;
+}
+
+
+
+#addInfo {
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+#mainInfo {
+width:34em;
+border-right:1px dotted #ffae63;
+padding-top:1px;
+}
+
+.ss form h3 {
+	color: #232323;
+	border-top: none;
+	margin-top:0;
+}
+
+.ss form label {
+	font-weight: bold;
+	margin-bottom:0;	
+	color:#150d07;
+	text-shadow : #b87e47 1px 1px 1px;
+	padding:0;
+}
+
+.ss form em {
+	background: #fffecc url(http://boagworld.com/images/notice.gif) no-repeat left center;
+	border: 1px solid #ce8d50;
+	font-weight:normal;
+	padding:2px 10px 2px 25px;
+	text-shadow: none;
+	color: #bd7945;
+}
+
+.ss form .primaryAction {
+	width:5em;
+	background: #fffecc;
+	border:3px solid #f1dca5;
+	text-shadow : #b87e47 1px 1px 1px;
+	color: black;
+	-webkit-box-shadow : 0 0 5px #000;
+	margin: 10px 0;
+	cursor:pointer;
+}
+
+.ss form p {
+	color: white;
+}
+
+#rightForMe {
+	margin-right:-22em;
+	background: url(/images/clinicMan.jpg) no-repeat bottom right;
+	padding-bottom: 4em;
+}
+
+#rightForMe p, #rightForMe ul {
+	margin-right:22em;
+}
+
+.clinicThanks #container, .clinicThanks #footer, .workshopThanks #container, .workshopThanks #footer {
+	width:573px;
+}
+
+.clinicThanks #primary, .workshopThanks #primary {
+	width:100%;
+	padding-bottom:40px;
+}
+
+
+.workshop #price {
+	font-size:4.5em;
+}
+
+.workshop #priceFull {
+	font-size:4.5em;
+	text-decoration: line-through;
+	line-height: 1em;
+	color: #e9dba5;
+}
+
+.workshop #priceFull acronym {
+	color: #e9dba5;
+}
+
+.workshop p.butWait {
+	margin-top:-2em !important;
+	color: black !important;
+}
+
+.workshop #primary strong {
+	font-weight: bold;
+}
+
+.workshop h1 a, .workshopThanks h1 a {
+	width:573px;
+	height:74px;
+	overflow: none;
+	text-indent: -5000em;
+	background: url(/images/edweb09.gif) no-repeat bottom left;
+	clear: both;	
+	padding:0;
+	display: block;
+}
+
+.w10 h1 a, .workshopThanks h1 a {
+	background: url(/images/edweb10.gif) no-repeat bottom left;
+}
+
+.workshop #s4 {
+	text-align: center;
+	margin-top:3em;
+	display: block;
+}
