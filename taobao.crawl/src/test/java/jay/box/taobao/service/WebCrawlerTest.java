@@ -20,7 +20,7 @@ public class WebCrawlerTest extends AbstractJUnit38SpringContextTests {
 	}
 	
 	public void testCrawlPage() throws Exception {
-		String resp = simpleWebCrawler.wget("www.taobao.com");
+		String resp = simpleWebCrawler.wget("http://www.taobao.com");
 		System.out.println(resp);
 	}
 }
