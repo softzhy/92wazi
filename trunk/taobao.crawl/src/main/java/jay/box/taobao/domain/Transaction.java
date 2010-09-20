@@ -12,7 +12,7 @@ public class Transaction implements Serializable {
 	public final static Integer RATE_GOOD = 1, RATE_BAD = 3, RATE_NORMAL = 2;
 	
 	@OneToOne
-	private Shop shop;
+	private Seller shop;
 	
 	@OneToOne
 	private Buyer buyer;
@@ -28,11 +28,11 @@ public class Transaction implements Serializable {
 	
 	private Date buyerRatedAt;
 
-	public Shop getShop() {
+	public Seller getShop() {
 		return shop;
 	}
 
-	public void setShop(Shop shop) {
+	public void setShop(Seller shop) {
 		this.shop = shop;
 	}
 

@@ -3,8 +3,6 @@ package jay.box.taobao.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.Resource;
-
 import org.dom4j.Document;
 import org.dom4j.Node;
 
@@ -48,7 +46,6 @@ public class SearchedItemIterator extends AbstractPagedResultIterator<Item> {
 
 	private WebCrawler webCrawler;
 	
-	@Resource
 	public void setWebCrawler(WebCrawler webCrawler){
 		this.webCrawler = webCrawler;
 	}

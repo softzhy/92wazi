@@ -1,17 +1,14 @@
 package jay.box.taobao.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
-public class Shop implements Serializable {
+public class Seller extends User{
 
 	private static final long serialVersionUID = 1L;
 	
-	@Id
 	private String name;//shop name
 	
 	private String taobaoId;//taobao used for identifying this shop
