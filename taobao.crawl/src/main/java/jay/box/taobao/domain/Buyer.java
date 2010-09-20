@@ -1,13 +1,12 @@
 package jay.box.taobao.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Buyer implements Serializable {
+public class Buyer extends User {
 
 	private static final long serialVersionUID = 1L;
 
@@ -17,8 +16,6 @@ public class Buyer implements Serializable {
 	private Integer buyerCredit;
 	
 	private String userLocation;//where user comes from
-	
-	private Date registeredOn;//date registered
 	
 	private Date lastLoginOn;
 	
@@ -46,14 +43,6 @@ public class Buyer implements Serializable {
 
 	public void setUserLocation(String userLocation) {
 		this.userLocation = userLocation;
-	}
-
-	public Date getRegisteredOn() {
-		return registeredOn;
-	}
-
-	public void setRegisteredOn(Date registeredOn) {
-		this.registeredOn = registeredOn;
 	}
 
 	public Date getLastLoginOn() {
