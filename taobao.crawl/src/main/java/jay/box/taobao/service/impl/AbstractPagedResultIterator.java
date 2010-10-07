@@ -13,12 +13,16 @@ public abstract class AbstractPagedResultIterator<T> implements WebIterator<T> {
 	}
 	
 	public boolean hasNext(){
+		if(currentPageIterator == null)//iteration is not start yet
+			requestNextPage();
+		
 		boolean b1 = currentPageIterator.hasNext();
+		
 		if(b1 == false){
 			if(hasNextPage == false){
-				return false;
+				return false;//reached last page's last item
 			}else{
-				requestNextPage();
+				requestNextPage();//reached this page's last item
 			}
 		}
 		return true;
@@ -28,6 +32,14 @@ public abstract class AbstractPagedResultIterator<T> implements WebIterator<T> {
 		return currentPageIterator.next();
 	}
 	
+	/**
+	 * what should be done in this method :
+	 * <ul>
+	 * <li>make HTTP request, get/analysis the HTML content
+	 * <li>make out current page's items list, and {@link #setCurrentPageIterator(Iterator)}
+	 * <li>detect if there were more page available and {@link #setHasNextPage(boolean)} 
+	 * </ul>
+	 */
 	protected abstract void requestNextPage();
 	
 	private String startURL;

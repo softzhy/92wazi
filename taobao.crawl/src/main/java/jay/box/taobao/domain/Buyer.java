@@ -3,16 +3,12 @@ package jay.box.taobao.domain;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
 public class Buyer extends User {
 
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	private String userId;//taobao id
-	
 	private Integer buyerCredit;
 	
 	private String userLocation;//where user comes from
@@ -20,14 +16,6 @@ public class Buyer extends User {
 	private Date lastLoginOn;
 	
 	private String ratingUrl;//user rating url
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
 
 	public Integer getBuyerCredit() {
 		return buyerCredit;
