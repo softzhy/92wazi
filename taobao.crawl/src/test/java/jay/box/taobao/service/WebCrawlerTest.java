@@ -7,11 +7,15 @@ import javax.annotation.Resource;
 import jay.box.taobao.domain.Item;
 import jay.box.taobao.service.impl.WebIteratorLocator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit38.AbstractJUnit38SpringContextTests;
 
 @ContextConfiguration(locations={"applicationContext.xml"})
 public class WebCrawlerTest extends AbstractJUnit38SpringContextTests {
+	
+	private final static Logger log = LoggerFactory.getLogger(WebCrawlerTest.class);
 
 	@Resource(name="simpleWebCrawler")
 	private WebCrawler simpleWebCrawler;
@@ -42,7 +46,8 @@ public class WebCrawlerTest extends AbstractJUnit38SpringContextTests {
 		while(itemIterator.hasNext()){
 			Item item = itemIterator.next();
 			items.add(item);
-			System.out.println(item);
+			if(items.size() > 220)
+				break;
 		}
 	}
 }
