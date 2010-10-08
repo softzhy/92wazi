@@ -51,7 +51,7 @@ public class SearchedItemIterator extends AbstractPagedResultIterator<Item> {
 		setCurrentPageIterator(answer.iterator());
 		
 		//next page url 
-		String href = doc.valueOf("//A[@class='page-next' and position()=1]/attribute::href");
+		String href = doc.valueOf("//A[@class='page-next']/attribute::href");
 		if(href == null || href.isEmpty()){
 			log.debug("no more page is available ");
 			setHasNextPage(false);
